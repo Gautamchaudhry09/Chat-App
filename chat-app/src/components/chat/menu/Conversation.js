@@ -62,7 +62,7 @@ export const Conversation = ({user,loading,setLoading}) => {
             setMessage({ text: data?.message, timestamp: data?.updatedAt });
         }
         getConversationMessage();
-    });
+    },[socket]);
 
 //     useEffect(() => {
 //     socket.current.on('getMessage',data => {
