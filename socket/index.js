@@ -16,7 +16,7 @@ const addUser = (userData,socketId) =>{
         users.push({...userData, socketId});
         a = [];
         users.map(user=> {a.push({name:user.name,id:user.sub})});
-        // a.push({name:userData.name,id:userData.sub})
+        // a.push({name:userData.name,id:userData.sub})//
     } 
 }
 
