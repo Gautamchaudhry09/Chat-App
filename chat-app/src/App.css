@@ -1,11 +1,13 @@
 
 *{
   margin: 0px;
+  
 }
 .App {
   text-align: center;
   width: 100%;
   background-color: rgb(159, 112, 112);
+  height: 80%;
 }
 
 .App-logo {
