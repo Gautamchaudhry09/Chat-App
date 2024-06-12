@@ -16,6 +16,9 @@ const Component = styled(Box)`
     background-color: grey;
     width:100%;
 `
+const Chat = styled(Box)`
+    height : 80%;
+`
 export const Messenger = () => {
 
     const {account} = useContext(AccountContext);
@@ -29,7 +32,9 @@ export const Messenger = () => {
                     {/* <Toolbar> */}
                     {/* </Toolbar> */}
                 {/* </LoginHeader> */}
-                <ChatDialog/>
+                <Chat>
+                    <ChatDialog/>
+               </Chat>
                 </>
             ) : (
                 <>
