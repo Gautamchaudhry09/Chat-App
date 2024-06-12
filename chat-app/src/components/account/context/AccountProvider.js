@@ -14,7 +14,7 @@ export const AccountProvider = ({children}) => {
     const socket = useRef();
 
     useEffect(()=>{
-      socket.current = io('http://chat-app-socket-server-twkp.onrender.com')
+      socket.current = io('ws://chat-app-socket-server-twkp.onrender.com')
     },[person])
 
   return (
