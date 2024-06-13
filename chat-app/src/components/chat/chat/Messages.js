@@ -27,6 +27,7 @@ const SearchWrapper = styled(Box)`
 margin-top:auto;
 position: absolute;
 bottom: 0;
+width:100%;
 // padding-bottom:15px;
 `
 
