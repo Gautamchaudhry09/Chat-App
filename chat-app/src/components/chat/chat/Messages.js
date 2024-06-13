@@ -19,7 +19,8 @@ height: calc(98vh - 65px);
 const Component = styled(Box)`
   overflow:auto;
   // background-color:#6f6f6f;
-  padding-bottom:5px;
+  // padding-bottom:5px;
+  padding-top:85px;
 `
 
 const SearchWrapper = styled(Box)`
