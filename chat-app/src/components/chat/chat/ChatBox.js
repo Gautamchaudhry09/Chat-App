@@ -10,8 +10,10 @@ import { getConversation } from '../../../service/api'
 
 const Component = styled(Box)`
 background-image: url(https://img.freepik.com/free-vector/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg?w=900&t=st=1707377360~exp=1707377960~hmac=6441548470f5eb85c9fdd885d46b429ffa28240dec64d7d4446da2b94b10a58c);
-margin-top:50px;
-height:90vh;
+position:relative;
+// margin-top:50px;
+// height:90vh;
+
 box-sizing: border-box;
 // overflow:hidden;
 // overflow-y:scroll;
