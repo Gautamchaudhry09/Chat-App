@@ -1,2 +1,2 @@
 # Chat-App
-https://chat-app-socket-server-twkp.onrender.com
+https://chat101010.netlify.app 
