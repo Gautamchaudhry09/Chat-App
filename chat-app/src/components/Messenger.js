@@ -20,9 +20,14 @@ const Chat = styled(Box)`
     height : 80%;
 `
 export const Messenger = () => {
-
-    const account=localStorage.getItem('token');
-
+    const {account,setAccount} = useContext(AccountContext);
+    useEffect(()=>{
+        const token=localStorage.getItem('token');
+        if(token){
+            setAccount(JSON.parse(token));
+        }
+    },[])
+    
   return (
     <Component>
         {
