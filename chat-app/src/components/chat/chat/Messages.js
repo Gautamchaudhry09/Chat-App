@@ -13,6 +13,7 @@ const Wrapper = styled(Box)`
 display:flex;
 flex-direction:column;
 height: calc(98vh - 65px);
+
 // height:85svh;
 `
 
@@ -28,7 +29,6 @@ const SearchWrapper = styled(Box)`
 margin-top:auto;
 position: absolute;
 bottom: 0;
-right:0;
 width:100%;
 // padding-bottom:15px;
 `
