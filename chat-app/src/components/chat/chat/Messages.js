@@ -14,7 +14,8 @@ display:flex;
 flex-direction:column;
 height: calc(98vh - 65px);
 // height:85svh;
-posiiton:relative;
+posiiton:fixed;
+top:50px;
 `
 
 const Component = styled(Box)`
