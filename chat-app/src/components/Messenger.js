@@ -1,6 +1,6 @@
 import React from 'react'
 import {AppBar,Toolbar,styled,Box, Container } from "@mui/material"
-import { useContext } from 'react'
+import { useContext,useEffect } from 'react'
 import { AccountContext } from './account/context/AccountProvider'
 import { ChatDialog } from './chat/ChatDialog'
 import { LoginDialog } from './account/LoginDialog'
