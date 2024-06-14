@@ -26,7 +26,7 @@ const Component = styled(Box)`
 const SearchWrapper = styled(Box)`
 // align-self:flex-end;
 margin-top:auto;
-position: absolute;
+position: fixed;
 bottom: 0;
 width:100%;
 // padding-bottom:15px;
