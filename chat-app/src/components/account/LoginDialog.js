@@ -84,9 +84,9 @@ export const LoginDialog = () => {
             <Container>
                 <Title>To get started:</Title>
                 <StyledList>
-                    <ListItem>1. Press on the Google Sign In button below</ListItem>
-                    <ListItem>2. Choose the account you want to sign it with</ListItem>
-                    <ListItem>3. That's it Start Chatting!</ListItem>
+                    <ListItem><p className="loginFont">1. Press on the Google Sign In button below</p></ListItem>
+                    <ListItem><p className="loginFont">2. Choose the account you want to sign it with</p></ListItem>
+                    <ListItem><p className="loginFont">3. That's it Start Chatting!</p></ListItem>
                 </StyledList>
             </Container>
             <Box style={{position: 'relative'}}>
