@@ -23,7 +23,10 @@ const Component = styled(Box)`
   // padding-bottom:5px;
   padding-top:85px;
 `
-
+const Loader = styled(Box)`
+  position:fixed;
+  top:100px;
+`
 const SearchWrapper = styled(Box)`
 // align-self:flex-end;
 margin-top:auto;
@@ -124,20 +127,20 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
       <Component className='MessageContainer'>
         {
           loading ? (
-            <>
-            <PacmanLoader color="#36d7b7" />
-            </>
+            <Loader>
+              <PacmanLoader color="#36d7b7" />
+            </Loader>
           ) : (
             <>
-            </>
-          )
-        }
         {
           messages && messages.map((message) => (
             <MessageContainer  ref={scrollRef}>
               <Message message={message}/>
             </MessageContainer>
           ))
+        }
+            </>
+          )
         }
       </Component>
       <SearchWrapper>
