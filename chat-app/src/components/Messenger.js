@@ -23,11 +23,11 @@ export const Messenger = () => {
     const {account,setAccount} = useContext(AccountContext);
     useEffect(()=>{
     //     const token=localStorage.getItem('token');
-    //     if(token){
-    //         setAccount(JSON.parse(token));
-    //     }
     const token=localStorage.getItem('token');
-    console.log(JSON.parse(token));
+        if(token){
+            console.log(JSON.parse(token));
+            setAccount(JSON.parse(token));
+        }
     },[])
     
   return (
