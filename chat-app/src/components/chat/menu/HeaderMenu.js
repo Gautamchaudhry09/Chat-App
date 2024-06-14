@@ -15,7 +15,7 @@ import { AccountContext } from '../../account/context/AccountProvider';
 export const HeaderMenu = ({setOpenDrawer}) => {
 
     const [open, setOpen] = useState(null);
-    const {socket,account} = useContext(AccountContext);
+    const {socket,account,setAccount} = useContext(AccountContext);
 
     const handleClose = () => {
         setOpen(null);
@@ -30,7 +30,9 @@ export const HeaderMenu = ({setOpenDrawer}) => {
       googleLogout();
       setOpen(null);
       socket.current.emit('removeUser',account);
-      window.location.reload();
+      localStorage.removeItem('token');
+      setAccount(null);  
+      // window.location.reload();
     }
     
     
