@@ -27,6 +27,8 @@ export const Messenger = () => {
     //         setAccount(JSON.parse(token));
     //     }
     // },[])
+    const token=localStorage.getItem('token');
+    console.log(JSON.parse(token));
     
   return (
     <Component>
