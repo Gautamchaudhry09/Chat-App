@@ -68,9 +68,9 @@ export const LoginDialog = () => {
         console.log(decoded);
         console.log(JSON.stringify(decoded));
             
-        // localStorage.setItem('token',JSON.stringify(decoded));
+        localStorage.setItem('token',JSON.stringify(decoded));
         setAccount(decoded);
-        setPerson(null);
+        setPerson({});
         await addUser(decoded);
     }
      
