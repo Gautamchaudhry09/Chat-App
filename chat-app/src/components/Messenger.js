@@ -21,12 +21,12 @@ const Chat = styled(Box)`
 `
 export const Messenger = () => {
     const {account,setAccount} = useContext(AccountContext);
-    useEffect(()=>{
-        const token=localStorage.getItem('token');
-        if(token){
-            setAccount(JSON.parse(token));
-        }
-    },[])
+    // useEffect(()=>{
+    //     const token=localStorage.getItem('token');
+    //     if(token){
+    //         setAccount(JSON.parse(token));
+    //     }
+    // },[])
     
   return (
     <Component>
