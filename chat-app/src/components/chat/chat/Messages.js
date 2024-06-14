@@ -10,7 +10,6 @@ import { Message } from './message';
 import {PacmanLoader} from 'react-spinners'
 
 const Wrapper = styled(Box)`
-position:relative;
 display:flex;
 flex-direction:column;
 height: calc(98vh - 65px);
