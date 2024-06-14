@@ -20,7 +20,7 @@ box-sizing: border-box;
 
 `
 const Wrapper = styled(Box)`
-position: absolute;
+position: fixed;
 top: 0;
 height:10%;
 z-index:10000;
