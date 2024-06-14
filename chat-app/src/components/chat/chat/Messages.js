@@ -12,7 +12,8 @@ import {PacmanLoader} from 'react-spinners'
 const Wrapper = styled(Box)`
 display:flex;
 flex-direction:column;
-height: calc(98vh - 65px);
+// height: calc(98vh - 65px);
+height:100%;
 // height:85svh;
 `
 
@@ -26,8 +27,8 @@ const Component = styled(Box)`
 const SearchWrapper = styled(Box)`
 // align-self:flex-end;
 margin-top:auto;
-position: absolute;
-bottom: 0;
+// position: absolute;
+// bottom: 0;
 width:100%;
 // padding-bottom:15px;
 `
