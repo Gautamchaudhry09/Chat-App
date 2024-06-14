@@ -21,7 +21,7 @@ const Chat = styled(Box)`
 `
 export const Messenger = () => {
 
-    const {account} = useContext(AccountContext);
+    const account=localStorage.getItem('token');
 
   return (
     <Component>
