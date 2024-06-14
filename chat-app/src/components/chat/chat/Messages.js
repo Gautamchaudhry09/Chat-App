@@ -14,8 +14,6 @@ display:flex;
 flex-direction:column;
 height: calc(98vh - 65px);
 // height:85svh;
-posiiton:fixed;
-top:50px;
 `
 
 const Component = styled(Box)`
@@ -41,6 +39,7 @@ const MessageContainer = styled(Box)`
 padding: 0 5px 0;
 margin:1px 15px 0 15px;
 `
+
 
 export const Messages = ({person,conversation,loading,setLoading}) => {
 
