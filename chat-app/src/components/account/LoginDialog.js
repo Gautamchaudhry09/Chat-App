@@ -67,7 +67,7 @@ export const LoginDialog = () => {
         const decoded = jwtDecode(res.credential);
         // console.log(decoded);
             
-        localStorage.setItem('token',decoded);
+        localStorage.setItem('token',JSON.stringify(decoded));
         setAccount(decoded);
         await addUser(decoded);
     }
