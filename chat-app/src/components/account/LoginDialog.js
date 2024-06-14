@@ -61,7 +61,7 @@ const QRcode = styled('img')({
     //COMPONENT
 export const LoginDialog = () => {
 
-    const {setAccount} = useContext(AccountContext);
+    const {setAccount,setPerson} = useContext(AccountContext);
 
     const onLoginSuccess = async (res) => {
         const decoded = jwtDecode(res.credential);
@@ -69,6 +69,7 @@ export const LoginDialog = () => {
             
         localStorage.setItem('token',JSON.stringify(decoded));
         setAccount(decoded);
+        setPerson(null);
         await addUser(decoded);
     }
      
