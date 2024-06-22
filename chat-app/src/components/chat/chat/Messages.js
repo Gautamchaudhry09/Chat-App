@@ -144,7 +144,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
             )) 
           ) : (
             <MessageContainer  ref={scrollRef}>
-                <Message message={defaultMessage}>
+                <Message message={defaultMessage}/>
               </MessageContainer>
           )
         }
