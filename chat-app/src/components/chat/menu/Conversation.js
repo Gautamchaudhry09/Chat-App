@@ -51,8 +51,8 @@ export const Conversation = ({user,loading,setLoading}) => {
 
     const getUser = async () => {
         setLoading(true);
-        setPerson(user);
         await setConversation({senderId: account.sub, receiverId: user.sub })
+        setPerson(user);
         setLoading(false);
     }
 
