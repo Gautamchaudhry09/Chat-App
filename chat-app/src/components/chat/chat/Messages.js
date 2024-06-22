@@ -122,7 +122,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
   },[messages])
   const defaultMessage={
     text:"Start Chatting! Send a Message" ,
-    createdAt:"-DEVELOPER",
+    createdAt:Date.now(),
     senderId:"none"
   };
   return (
