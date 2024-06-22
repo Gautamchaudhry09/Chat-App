@@ -108,7 +108,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
     const getMessageDetails = async () => {
       setLoading(true);
       let data = await getMessages(conversation._id);
-      // console.log(data);
+      console.log(data);
       setMessages(data);
       setLoading(false);
     }
@@ -137,7 +137,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
           ) : (
             <>
         {
-          messages ? (
+          messages.length()>0 ? (
             messages.map((message) => (
               <MessageContainer  ref={scrollRef}>
                 <Message message={message}/>
