@@ -43,7 +43,7 @@ const Text = styled(Typography)`
     margin: -19px 0px 11px 17px;
 `;
 
-export const Conversation = ({user,loading,setLoading}) => {
+export const Conversation = ({user,loading,setLoading,setOpen}) => {
 
     const {setPerson,account,socket} = useContext(AccountContext);
     // const [incomingMessage,setIncomingMessage] = useState(null);
@@ -53,6 +53,7 @@ export const Conversation = ({user,loading,setLoading}) => {
         setLoading(true);
         await setConversation({senderId: account.sub, receiverId: user.sub })
         setPerson(user);
+        setOpen(false);
         setLoading(false);
     }
 
