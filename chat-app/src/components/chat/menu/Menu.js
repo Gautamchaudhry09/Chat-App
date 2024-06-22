@@ -21,7 +21,7 @@ export const Menu = ({open,setOpen,loading,setLoading}) => {
     <Component>
         <Header open={open} setOpen={setOpen}/>
         <Search setText={setText}/>
-        <Conversations text={text} loading={loading} setLoading={setLoading}/>
+        <Conversations text={text} loading={loading} setLoading={setLoading} setOpen={setOpen}/>
     </Component>
   )
 }
