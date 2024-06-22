@@ -40,9 +40,7 @@ import ArrowBack from '@mui/icons-material/ArrowBack';
 export const Header = ({open,setOpen}) => {
     const {account,person} = useContext(AccountContext);
     const [openDrawer, setOpenDrawer] = useState(false);
-    useState(()=>{
-        console.log(person);
-    })
+    
   return (
     <>
     <Component className='menuHeader'>
