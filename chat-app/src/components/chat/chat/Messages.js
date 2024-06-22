@@ -137,7 +137,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
           ) : (
             <>
         {
-          messages ? (
+          messages.length>0 ? (
             messages.map((message) => (
               <MessageContainer  ref={scrollRef}>
                 <Message message={message}/>
