@@ -133,11 +133,17 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
           ) : (
             <>
         {
-          messages && messages.map((message) => (
+          messages ? (
+            messages.map((message) => (
+              <MessageContainer  ref={scrollRef}>
+                <Message message={message}/>
+              </MessageContainer>
+            )) 
+          ) : (
             <MessageContainer  ref={scrollRef}>
-              <Message message={message}/>
-            </MessageContainer>
-          ))
+                <Message message="Start Chatting! Send a Message"/>
+              </MessageContainer>
+          )
         }
             </>
           )
