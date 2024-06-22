@@ -120,7 +120,10 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
   useEffect(()=>{
     scrollRef.current?.scrollIntoView({ transition:'smooth' })
   },[messages])
-
+  const defaultMessage={
+    text:"Start Chatting! Send a Message" ,
+    createdAt:"-DEVELOPER"
+  };
   return (
     <>
       <Wrapper>
@@ -141,7 +144,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
             )) 
           ) : (
             <MessageContainer  ref={scrollRef}>
-                <Message message={text:"Start Chatting! Send a Message" ,createdAt:"-DEVELOPER"}>
+                <Message message={defaultMessage}>
               </MessageContainer>
           )
         }
