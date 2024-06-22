@@ -18,7 +18,7 @@ background-color: #e9edef;
 opacity:0.6;
 `
 
-export const Conversations = ({text,loading,setLoading}) => {
+export const Conversations = ({text,loading,setLoading,setOpen}) => {
 
     const [users,setUsers] = useState([]);
     const {account,setActiveUsers,socket,person} = useContext(AccountContext);
@@ -61,7 +61,7 @@ export const Conversations = ({text,loading,setLoading}) => {
         {
             users.filter(user => user.sub!==account.sub).map(user=>(
                 <>
-                    <Conversation user={user} loading={loading} setLoading={setLoading}/>
+                    <Conversation user={user} loading={loading} setLoading={setLoading} setOpen={setOpen}/>
                     <StyledDivider/>
                 </>
             ))
