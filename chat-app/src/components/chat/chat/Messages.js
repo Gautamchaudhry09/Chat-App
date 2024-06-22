@@ -141,7 +141,7 @@ export const Messages = ({person,conversation,loading,setLoading}) => {
             )) 
           ) : (
             <MessageContainer  ref={scrollRef}>
-                <Message message="Start Chatting! Send a Message"/>
+                <Message message={text:"Start Chatting! Send a Message" ,createdAt:"-DEVELOPER"}>
               </MessageContainer>
           )
         }
